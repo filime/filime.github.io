@@ -1,0 +1,30 @@
+title: "filime.log"
+description: "배운 것과 만든 것을 차곡차곡 기록합니다."
+author: "filime"
+email: ""
+github_username: "filime"
+
+lang: ko-KR
+timezone: Asia/Seoul
+url: "https://filime.github.io"
+baseurl: ""
+
+permalink: /posts/:year/:month/:day/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+

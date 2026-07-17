@@ -1,0 +1,25 @@
+---
+layout: page
+title: 아카이브
+kicker: ARCHIVE
+description: 지금까지 작성한 모든 글입니다.
+permalink: /archive/
+---
+
+{% assign posts_by_year = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+<div class="archive-list">
+  {% for year in posts_by_year %}
+    <section aria-labelledby="year-{{ year.name }}">
+      <h2 id="year-{{ year.name }}">{{ year.name }}</h2>
+      <ol>
+        {% for post in year.items %}
+          <li>
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%m.%d' }}</time>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ol>
+    </section>
+  {% endfor %}
+</div>
+
