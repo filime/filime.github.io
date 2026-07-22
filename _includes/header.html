@@ -4,6 +4,13 @@
       <span class="brand-mark" aria-hidden="true">F<span>.</span></span>
       <span class="brand-name">{{ site.title }}</span>
     </a>
+    {% if page.layout == 'home' %}
+    <nav class="site-nav home-quick-nav" aria-label="홈 빠른 링크">
+      <a href="#work-experience">RESUME</a>
+      <a href="#blogs">BLOG</a>
+      <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">GH <span aria-hidden="true">↗</span><span class="sr-only">(새 창)</span></a>
+    </nav>
+    {% else %}
     <nav class="site-nav" aria-label="주요 메뉴">
       <a href="{{ '/' | relative_url }}"{% if page.url == '/' or page.layout == 'post' %} aria-current="page"{% endif %}>글</a>
       <a href="{{ '/tags/' | relative_url }}"{% if page.url == '/tags/' %} aria-current="page"{% endif %}>태그</a>
@@ -13,6 +20,7 @@
         <a class="external-link" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="sr-only">(새 창)</span></a>
       {% endunless %}
     </nav>
+    {% endif %}
   </div>
 </header>
 
