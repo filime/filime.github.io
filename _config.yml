@@ -1,8 +1,15 @@
 title: "filime.log"
-description: "배운 것과 만든 것을 차곡차곡 기록합니다."
-author: "filime"
+description: "웹/앱 모의해킹, 취약점 분석과 AI Agent 기반 보안 연구를 기록합니다."
+author: "김정호"
 email: ""
 github_username: "filime"
+tistory_url: "https://filime.tistory.com"
+
+profile:
+  name: "김정호"
+  handle: "filime"
+  role: "Web/App Penetration Tester · Security Researcher · CTF Player"
+  avatar: "/assets/images/profile/avatar-filime.jpg"
 
 lang: ko-KR
 timezone: Asia/Seoul
