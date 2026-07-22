@@ -8,7 +8,7 @@ tistory_url: "https://filime.tistory.com"
 profile:
   name: "김정호"
   handle: "filime"
-  role: "Web/App Penetration Tester · Security Researcher · CTF Player"
+  role: "Web/App Penetration Tester & Security Researcher & CTF Player"
   avatar: "/assets/images/profile/avatar-filime.jpg"
 
 lang: ko-KR
@@ -34,4 +34,3 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor
-

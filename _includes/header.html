@@ -1,18 +1,11 @@
 <header class="site-header">
-  <div class="container header-inner">
-    <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} 홈">
-      <span class="brand-mark" aria-hidden="true">F<span>.</span></span>
-      <span class="brand-name">{{ site.title }}</span>
-    </a>
-    <nav class="site-nav" aria-label="주요 메뉴">
-      <a href="{{ '/' | relative_url }}"{% if page.url == '/' or page.layout == 'post' %} aria-current="page"{% endif %}>글</a>
-      <a href="{{ '/tags/' | relative_url }}"{% if page.url == '/tags/' %} aria-current="page"{% endif %}>태그</a>
-      <a href="{{ '/archive/' | relative_url }}"{% if page.url == '/archive/' %} aria-current="page"{% endif %}>아카이브</a>
-      <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>소개</a>
-      {% unless site.github_username == '' or site.github_username == 'YOUR_USERNAME' %}
-        <a class="external-link" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="sr-only">(새 창)</span></a>
-      {% endunless %}
+  <div class="page-shell site-header-inner">
+    <a class="site-brand" href="{{ '/' | relative_url }}">filime.log</a>
+    <nav class="site-nav" aria-label="블로그 메뉴">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/tags/' | relative_url }}">Tags</a>
+      <a href="{{ '/archive/' | relative_url }}">Archive</a>
+      <button class="page-theme-toggle" type="button" data-theme-toggle aria-label="테마 전환"><span data-theme-icon aria-hidden="true">☀</span></button>
     </nav>
   </div>
 </header>
-
