@@ -602,6 +602,24 @@ button {
   box-shadow: inset 0 0 0 1px rgba(96, 165, 250, 0.3);
 }
 
+.award-badge--bronze {
+  background: rgba(249, 115, 22, 0.14);
+  color: #fdba74;
+  box-shadow: inset 0 0 0 1px rgba(249, 115, 22, 0.32);
+}
+
+.award-badge--rank {
+  background: rgba(16, 185, 129, 0.14);
+  color: #6ee7b7;
+  box-shadow: inset 0 0 0 1px rgba(52, 211, 153, 0.3);
+}
+
+.award-badge--commendation {
+  background: rgba(168, 85, 247, 0.14);
+  color: #d8b4fe;
+  box-shadow: inset 0 0 0 1px rgba(192, 132, 252, 0.3);
+}
+
 html[data-theme="light"] .award-badge--finalist {
   background: rgba(217, 119, 6, 0.12);
   color: #8a5a00;
@@ -612,6 +630,24 @@ html[data-theme="light"] .award-badge--contributor {
   background: rgba(37, 99, 235, 0.1);
   color: #1d4ed8;
   box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.24);
+}
+
+html[data-theme="light"] .award-badge--bronze {
+  background: rgba(194, 65, 12, 0.1);
+  color: #9a3412;
+  box-shadow: inset 0 0 0 1px rgba(154, 52, 18, 0.26);
+}
+
+html[data-theme="light"] .award-badge--rank {
+  background: rgba(5, 150, 105, 0.1);
+  color: #047857;
+  box-shadow: inset 0 0 0 1px rgba(5, 150, 105, 0.24);
+}
+
+html[data-theme="light"] .award-badge--commendation {
+  background: rgba(126, 34, 206, 0.1);
+  color: #6b21a8;
+  box-shadow: inset 0 0 0 1px rgba(126, 34, 206, 0.24);
 }
 
 .award-card > p {
