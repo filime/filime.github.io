@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-<article class="container prose page-content">
+<div class="container prose page-content">
   <header class="page-header">
     {% if page.kicker %}<p class="eyebrow">{{ page.kicker }}</p>{% endif %}
     <h1>{{ page.title | escape }}</h1>
     {% if page.description %}<p class="page-description">{{ page.description }}</p>{% endif %}
   </header>
   {{ content }}
-</article>
+</div>
