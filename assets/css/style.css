@@ -721,6 +721,18 @@ button {
   font-size: 9px;
 }
 
+.vendor-icon--logo {
+  overflow: hidden;
+  background: transparent;
+}
+
+.vendor-icon--logo img {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+}
+
 .vuln-card h3 {
   margin: 0;
   color: var(--ink-100);
