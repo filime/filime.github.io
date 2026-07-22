@@ -1,18 +1,19 @@
 :root {
   color-scheme: dark;
-  --bg: #08080c;
-  --ink-900: #111117;
-  --ink-800: #1a1a23;
-  --ink-700: #222230;
-  --ink-600: #2a2a38;
-  --ink-500: #3f3f50;
-  --ink-400: #5c5c6e;
-  --ink-300: #9898a8;
-  --ink-200: #c0c0cc;
-  --ink-100: #ededf0;
-  --ink-50: #f8f8fa;
-  --accent: #d97706;
-  --accent-soft: rgba(217, 119, 6, 0.1);
+  --bg: #000000;
+  --ink-900: #0a0a0a;
+  --ink-800: #111111;
+  --ink-700: #1a1a1a;
+  --ink-600: #2a2a2a;
+  --ink-500: #4a4a4a;
+  --ink-400: #737373;
+  --ink-300: #a3a3a3;
+  --ink-200: #d4d4d4;
+  --ink-100: #e5e5e5;
+  --ink-50: #ffffff;
+  --accent: #ffffff;
+  --accent-soft: rgba(255, 255, 255, 0.1);
+  --accent-contrast: #000000;
   --font-body: "Outfit", "Noto Sans KR", system-ui, sans-serif;
   --font-display: "Syne", "Noto Sans KR", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
@@ -21,18 +22,19 @@
 html[data-theme="light"] {
   color-scheme: light;
   --bg: #ffffff;
-  --ink-900: #f4f5f6;
-  --ink-800: #e8eaed;
-  --ink-700: #dfe2e6;
-  --ink-600: #cdd1d7;
-  --ink-500: #9ca3af;
-  --ink-400: #6b7280;
-  --ink-300: #4b5563;
-  --ink-200: #374151;
-  --ink-100: #1f2937;
-  --ink-50: #111827;
-  --accent: #b45309;
-  --accent-soft: rgba(180, 83, 9, 0.08);
+  --ink-900: #f5f5f5;
+  --ink-800: #ededed;
+  --ink-700: #e5e5e5;
+  --ink-600: #d4d4d4;
+  --ink-500: #a3a3a3;
+  --ink-400: #737373;
+  --ink-300: #525252;
+  --ink-200: #404040;
+  --ink-100: #171717;
+  --ink-50: #000000;
+  --accent: #000000;
+  --accent-soft: rgba(0, 0, 0, 0.08);
+  --accent-contrast: #ffffff;
 }
 
 *,
@@ -66,6 +68,7 @@ body {
   inset: 0;
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cfilter id='noise'%3E%3CfeTurbulence baseFrequency='.88' numOctaves='4' stitchTiles='stitch' type='fractalNoise'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
   content: "";
+  filter: grayscale(1);
   opacity: 0.012;
   pointer-events: none;
 }
@@ -86,7 +89,7 @@ button {
 
 ::selection {
   background: var(--accent);
-  color: #fff;
+  color: var(--accent-contrast);
 }
 
 :focus-visible {
@@ -102,7 +105,7 @@ button {
   padding: 8px 12px;
   border-radius: 6px;
   background: var(--accent);
-  color: #fff;
+  color: var(--accent-contrast);
   transform: translateY(-160%);
 }
 
@@ -298,6 +301,7 @@ button {
   height: 112px;
   border: 2px solid var(--ink-600);
   border-radius: 50%;
+  filter: grayscale(1);
   object-fit: cover;
   object-position: center 22%;
 }
@@ -1164,13 +1168,18 @@ button {
   :root {
     --bg: #fff;
     --ink-900: #fff;
-    --ink-800: #f4f4f5;
-    --ink-600: #d4d4d8;
-    --ink-500: #71717a;
-    --ink-400: #52525b;
-    --ink-300: #3f3f46;
-    --ink-100: #18181b;
-    --ink-50: #09090b;
+    --ink-800: #f5f5f5;
+    --ink-700: #e5e5e5;
+    --ink-600: #d4d4d4;
+    --ink-500: #737373;
+    --ink-400: #525252;
+    --ink-300: #404040;
+    --ink-200: #262626;
+    --ink-100: #171717;
+    --ink-50: #000;
+    --accent: #000;
+    --accent-soft: rgba(0, 0, 0, 0.08);
+    --accent-contrast: #fff;
   }
 
   .floating-controls,

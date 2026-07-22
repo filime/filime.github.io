@@ -10,7 +10,7 @@
     themeButtons.forEach(function (button) {
       button.setAttribute('aria-label', isDark ? '라이트 모드로 전환' : '다크 모드로 전환');
     });
-    if (themeMeta) themeMeta.setAttribute('content', isDark ? '#08080c' : '#ffffff');
+    if (themeMeta) themeMeta.setAttribute('content', isDark ? '#000000' : '#ffffff');
   }
 
   themeButtons.forEach(function (button) {
