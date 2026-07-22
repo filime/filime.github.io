@@ -19,12 +19,14 @@
     {% include header.html %}
     {% if page.layout == 'home' %}
       <nav class="page-rail" aria-label="홈 섹션 바로가기">
-        <a href="#intro" aria-current="true"><span>01</span>소개</a>
-        <a href="#latest-posts"><span>02</span>최근 글</a>
-        <a href="#about-log"><span>03</span>블로그</a>
+        <a href="#intro" aria-label="소개"><span class="sr-only">소개</span></a>
+        <a href="#latest-posts" aria-label="최근 글"><span class="sr-only">최근 글</span></a>
+        <a href="#about-log" aria-label="블로그 소개"><span class="sr-only">블로그 소개</span></a>
       </nav>
+      <a class="site-shortcut" href="{{ '/archive/' | relative_url }}">전체 글 보기 <span aria-hidden="true">↗</span></a>
+    {% else %}
+      <span class="site-folio" aria-hidden="true">FILIME.LOG / 001</span>
     {% endif %}
-    <span class="site-folio" aria-hidden="true">FILIME.LOG / 001</span>
     <main id="main-content">{{ content }}</main>
     {% include footer.html %}
   </body>
