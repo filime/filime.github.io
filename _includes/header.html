@@ -1,6 +1,6 @@
 <header class="site-header">
   <div class="page-shell site-header-inner">
-    <a class="site-brand" href="{{ '/' | relative_url }}">filime.log</a>
+    <a class="site-brand" href="{{ '/' | relative_url }}">{{ site.profile.name | escape }} ({{ site.profile.handle | escape }})</a>
     <nav class="site-nav" aria-label="블로그 메뉴">
       <a href="{{ '/' | relative_url }}">Home</a>
       <a href="{{ '/tags/' | relative_url }}">Tags</a>
