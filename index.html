@@ -10,7 +10,6 @@ description: 웹·앱 모의해킹과 취약점 연구를 하는 Security Resear
   <a data-section-link href="#ctf-awards"><span class="section-nav-dot"></span><span class="section-nav-label">CTF Awards</span></a>
   <a data-section-link href="#vulnerabilities"><span class="section-nav-dot"></span><span class="section-nav-label">Vulnerabilities</span></a>
   <a data-section-link href="#talks"><span class="section-nav-dot"></span><span class="section-nav-label">Talks</span></a>
-  <a data-section-link href="#blogs"><span class="section-nav-dot"></span><span class="section-nav-label">Blog Posts</span></a>
 </nav>
 
 <div class="floating-controls">
@@ -157,21 +156,6 @@ description: 웹·앱 모의해킹과 취약점 연구를 하는 Security Resear
     <h2 id="talks-title" class="resume-heading"><span></span>Talks</h2>
     <div class="talk-list">
       <article class="talk-card"><div><h3>“Zero부터 시작하는 웹해커의 취뽀하기” <span>(한국어)</span></h3><p>제13회 레몬 세미나</p></div><time>2024</time></article>
-    </div>
-  </section>
-
-  <section id="blogs" class="resume-section reveal" aria-labelledby="blogs-title">
-    <h2 id="blogs-title" class="resume-heading"><span></span>Blog Posts</h2>
-    <div class="blog-list">
-      {% for post in site.posts limit: 8 %}
-        <a class="blog-card" href="{{ post.url | relative_url }}">
-          <div><h3>{{ post.title | escape }}</h3><p>{{ post.url | absolute_url }}</p></div>
-          <time>{{ post.date | date: '%Y' }}</time>
-        </a>
-      {% endfor %}
-      <a class="blog-card external" href="https://filime.tistory.com" target="_blank" rel="noopener noreferrer">
-        <div><h3>기존 기술 블로그</h3><p>https://filime.tistory.com</p></div><span>↗</span>
-      </a>
     </div>
   </section>
 </div>

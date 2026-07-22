@@ -537,8 +537,7 @@ button {
 }
 
 .award-card,
-.talk-card,
-.blog-card {
+.talk-card {
   border: 1px solid color-mix(in srgb, var(--ink-600) 50%, transparent);
   border-radius: 8px;
   background: var(--ink-900);
@@ -546,8 +545,7 @@ button {
 }
 
 .award-card:hover,
-.talk-card:hover,
-.blog-card:hover {
+.talk-card:hover {
   border-color: color-mix(in srgb, var(--ink-500) 70%, transparent);
   transform: translateY(-1px);
 }
@@ -841,14 +839,12 @@ html[data-theme="light"] .award-badge--commendation {
   line-height: 1.6;
 }
 
-.talk-list,
-.blog-list {
+.talk-list {
   display: grid;
   gap: 12px;
 }
 
-.talk-card,
-.blog-card {
+.talk-card {
   padding: 16px;
 }
 
@@ -859,8 +855,7 @@ html[data-theme="light"] .award-badge--commendation {
   gap: 20px;
 }
 
-.talk-card h3,
-.blog-card h3 {
+.talk-card h3 {
   margin: 0;
   color: var(--ink-100);
   font-size: 14px;
@@ -873,41 +868,18 @@ html[data-theme="light"] .award-badge--commendation {
   font-weight: 400;
 }
 
-.talk-card p,
-.blog-card p {
+.talk-card p {
   margin: 4px 0 0;
   color: var(--ink-500);
   font-size: 12px;
   line-height: 16px;
 }
 
-.talk-card time,
-.blog-card time,
-.blog-card > span {
+.talk-card time {
   flex: 0 0 auto;
   color: var(--ink-500);
   font-family: var(--font-mono);
   font-size: 12px;
-}
-
-.blog-card {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  min-width: 0;
-  max-width: 100%;
-  overflow: hidden;
-  gap: 16px;
-}
-
-.blog-card > div {
-  min-width: 0;
-}
-
-.blog-card p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .js-ready .reveal {
