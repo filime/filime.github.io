@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f7f6f2" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#171917" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#080808">
     {% assign meta_description = page.excerpt | default: page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 %}
     <meta name="description" content="{{ meta_description | escape }}">
     <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
@@ -15,9 +14,17 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     {% if site.url != '' %}<link rel="canonical" href="{{ page.url | absolute_url }}">{% endif %}
   </head>
-  <body>
+  <body class="layout-{{ page.layout | default: 'default' }}">
     <a class="skip-link" href="#main-content">본문 바로가기</a>
     {% include header.html %}
+    {% if page.layout == 'home' %}
+      <nav class="page-rail" aria-label="홈 섹션 바로가기">
+        <a href="#intro" aria-current="true"><span>01</span>소개</a>
+        <a href="#latest-posts"><span>02</span>최근 글</a>
+        <a href="#about-log"><span>03</span>블로그</a>
+      </nav>
+    {% endif %}
+    <span class="site-folio" aria-hidden="true">FILIME.LOG / 001</span>
     <main id="main-content">{{ content }}</main>
     {% include footer.html %}
   </body>
