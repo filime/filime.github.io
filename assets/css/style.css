@@ -401,14 +401,26 @@ button {
 }
 
 .social-icon {
-  display: grid;
+  --social-icon-source: none;
+  display: inline-block;
+  flex: 0 0 16px;
   width: 16px;
   height: 16px;
-  place-items: center;
-  color: currentColor;
-  font-family: var(--font-mono);
-  font-size: 8px;
-  line-height: 1;
+  background: currentColor;
+  -webkit-mask: var(--social-icon-source) center / contain no-repeat;
+  mask: var(--social-icon-source) center / contain no-repeat;
+}
+
+.social-icon--github {
+  --social-icon-source: url("../icons/github.svg");
+}
+
+.social-icon--tistory {
+  --social-icon-source: url("../icons/tistory.svg");
+}
+
+.social-icon--linkedin {
+  --social-icon-source: url("../icons/linkedin.svg");
 }
 
 .resume-section {
