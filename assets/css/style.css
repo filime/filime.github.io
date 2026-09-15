@@ -1352,10 +1352,10 @@ html[data-theme="light"] .award-badge--commendation {
 .layout-home .intro-row {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 224px;
+  grid-template-rows: minmax(410px, auto) auto;
   align-items: end;
-  min-height: 410px;
-  margin-bottom: 28px;
-  gap: clamp(40px, 7vw, 88px);
+  margin-bottom: 0;
+  gap: 28px clamp(40px, 7vw, 88px);
 }
 
 .layout-home .profile-photo-wrap {
@@ -1452,6 +1452,27 @@ html[data-theme="light"] .award-badge--commendation {
 
 .layout-home .social-actions {
   gap: 24px;
+}
+
+.layout-home .intro-row > .social-actions {
+  grid-row: 2;
+  grid-column: 1;
+  align-self: start;
+}
+
+.layout-home .intro-row > .hall-of-fame-links {
+  grid-column: 2;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.layout-home .hall-of-fame-icon {
+  display: block;
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
 }
 
 .layout-home .social-actions a {
@@ -1744,7 +1765,7 @@ html[data-theme="light"] .award-badge--commendation {
 
   .layout-home .intro-row {
     grid-template-columns: minmax(0, 1fr) 200px;
-    gap: 40px;
+    gap: 28px 40px;
   }
 
   .layout-home .profile-photo-wrap {
@@ -1788,8 +1809,9 @@ html[data-theme="light"] .award-badge--commendation {
 
   .layout-home .intro-row {
     grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
     min-height: 0;
-    gap: 32px;
+    gap: 16px;
   }
 
   .layout-home .profile-photo-wrap {
@@ -1800,8 +1822,9 @@ html[data-theme="light"] .award-badge--commendation {
   }
 
   .layout-home .intro-copy {
-    grid-row: 2;
+    grid-row: 3;
     grid-column: 1;
+    margin-top: 16px;
   }
 
   .layout-home .intro-copy h1 {
@@ -1816,6 +1839,17 @@ html[data-theme="light"] .award-badge--commendation {
 
   .layout-home .social-actions {
     gap: 16px;
+  }
+
+  .layout-home .intro-row > .social-actions {
+    grid-row: 4;
+    margin-top: 12px;
+  }
+
+  .layout-home .intro-row > .hall-of-fame-links {
+    grid-row: 2;
+    grid-column: 1;
+    margin-top: 0;
   }
 
   .layout-home .resume-section {
